@@ -4,6 +4,10 @@ import * as S from './styled';
 import * as H from '../Home/styled';
 import * as L from '../Login/styled';
 import logo from '../../assets/logo-caju.png';
+import produto1 from '../../assets/berrio-lata.png';
+import produto2 from '../../assets/cajuina-brasucos.png';
+import produto3 from '../../assets/castanha1.png';
+import produto4 from '../../assets/castanha2.png';
 
 export default function Inventory() {
 
@@ -35,6 +39,43 @@ export default function Inventory() {
             <S.SectionOne>
                 <S.Icon to="/registro-produto"><i class="fas fa-plus"></i> Novo Produto</S.Icon>
                 <H.CardsContainer>
+
+                    <H.Card>
+                        <H.Cardimage src={produto1} alt="Cerveja Berrió do Piauí em lata" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Berrió <br/> do Piauí</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Cerveja com caju</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto2} alt="Cajuína BraSucos" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Cajuína <br/> BraSucos</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto3} alt="Castanha de Caju" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Castanha de caju <br/> Bom Sabor</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto4} alt="Castanha de Caju Caramelizada" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Castanha de caju caramelizada Bom Sabor</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
                     { products.map((product) => {
                         return(
                             <H.Card>

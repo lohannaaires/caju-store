@@ -94,6 +94,7 @@ export const SearchInput = styled.input`
 
 export const SearchButton = styled.button`
     padding: 5px;
+    margin-left: 5px;
     border-radius: 50%;
     border: solid 3px #fff;	
 	outline: none;

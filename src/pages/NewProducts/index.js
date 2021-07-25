@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import * as S from './styled';
 import * as H from '../Home/styled';
 import logo from '../../assets/logo-caju.png';
+import produto1 from '../../assets/berrio-lata.png';
+import produto2 from '../../assets/cajuina-brasucos.png';
+import produto3 from '../../assets/castanha1.png';
+import produto4 from '../../assets/castanha2.png';
 import Sidebar from '../../components/Sidebar';
 
 export default function NewProducts() {
@@ -55,6 +59,7 @@ export default function NewProducts() {
                     <H.Icon to="/"><i class="fas fa-heart"></i></H.Icon>
                     <H.Icon to="/"><i class="fas fa-shopping-cart"></i></H.Icon>
                     { logged ? <H.Logged><i class="fas fa-user"></i> {name}</H.Logged> : <H.Icon to="/login"><i class="fas fa-user"></i> Entrar</H.Icon>}
+                    <H.Icon to="/panel"><i class="fas fa-user-lock"></i></H.Icon>
                 </H.IconsContainer>
             </H.Header>
             <H.FormMin id="min-form">
@@ -73,6 +78,42 @@ export default function NewProducts() {
             <S.SectionOne>
                 <S.Icon to="/"><i class="fas fa-angle-left"></i> Voltar</S.Icon>
                 <H.CardsContainer>
+                    <H.Card>
+                        <H.Cardimage src={produto1} alt="Cerveja Berrió do Piauí em lata" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Berrió <br/> do Piauí</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Cerveja com caju</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto2} alt="Cajuína BraSucos" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Cajuína <br/> BraSucos</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto3} alt="Castanha de Caju" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Castanha de caju <br/> Bom Sabor</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
+                    <H.Card>
+                        <H.Cardimage src={produto4} alt="Castanha de Caju Caramelizada" />
+                        <H.CardTitle>
+                            <H.TesteTitle>Castanha de caju caramelizada Bom Sabor</H.TesteTitle>
+                        </H.CardTitle>
+                        <H.TesteTitle>Descrição</H.TesteTitle>
+                        <H.TesteTitle>R$10,00</H.TesteTitle>
+                    </H.Card>
+
                     { products.map((product) => {
                         return(
                             <H.Card>

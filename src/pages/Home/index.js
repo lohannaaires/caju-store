@@ -50,6 +50,7 @@ export default function Home() {
                     <S.Icon to="/"><i class="fas fa-heart"></i></S.Icon>
                     <S.Icon to="/"><i class="fas fa-shopping-cart"></i></S.Icon>
                     { logged ? <S.Logged><i class="fas fa-user"></i> {name}</S.Logged> : <S.Icon to="/login"><i class="fas fa-user"></i> Entrar</S.Icon>}
+                    <S.Icon to="/panel"><i class="fas fa-user-lock"></i></S.Icon>
                 </S.IconsContainer>
             </S.Header>
             <S.FormMin id="min-form">
